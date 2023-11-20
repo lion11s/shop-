@@ -1,0 +1,226 @@
+
+#box #goods{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    left: 75px;
+    top: 0px;
+     
+}
+#box .goods ul{
+    height: 100%;
+    display: block;
+}
+
+#box .goods ul li a{
+    display: block;
+}
+#box .goods .goods_li .goods_img img{
+    width: 230px;
+	height: 150px;
+}
+#box .goods .goods_li .goods_price{
+    color: #FF4F0D;
+	font-size: 22px;
+	font-weight: bold;
+}
+#box .goods .goods_li .goods_txt{
+    font-size: 14px;
+    margin-top: 5px;
+	border-radius: 15%;
+}
+#box .goods .goods_li .goods_txt .txt1{
+    color: white;
+	border-radius: 15%;
+    background-color: #3CB371;
+}
+#box .goods .goods_li .goods_txt .txt2{
+    margin-left: 5px;
+}
+#box .goods .goods_li .goods_txt span{
+    margin-left: 5px;
+}
+#box .goods .goods_li .goods_txt2{
+    font-size: 15px;
+    margin-top: 5px;
+	color: orange;
+}
+#box .goods .goods_li .goods_txt3{
+    font-size: 15px;
+    margin-top: 5px;
+    color: blue;
+}
+#box .goods .goods_li .goods_txt3 span{
+    font-size: 15px;
+    color: #758188;
+}
+#box .goods .goods_li .goods_txt4{
+    font-size: 15px;
+    margin-top: 5px;
+}
+#box .goods .goods_li .goods_txt5{
+    font-size: 15px;
+    margin-top: 5px;
+}
+#box .goods .goods_li .goods_txt5 .txt1{
+	background-color: #db3030;
+	border-radius: 15%;
+	color: white;
+    font-size: 15px;
+}
+#box .goods .goods_li .goods_txt5 .txt2{
+    border: 1px #c11818 solid;
+	color: #de3232;
+	border-radius: 8%;
+}
+#box .goods .goods_li .goods_txt5 .txt3{
+	border: 1px #ea3838 solid;
+	color: #de3434;
+	border-radius: 8%;
+}
+#box .goods .goods_li .goods_buttona,.goods_buttonb,.goods_buttonc{
+    margin-top: 5px;
+    color: #8c8c8c;
+	height: 30px;
+	cursor: pointer; /* 指针/手形图标 */
+	
+}
+li{
+    list-style: none;
+}
+.goods_txt4{
+    color: #d97ddb;
+}
+.goods_txt4:hover{
+    color: #FF4F0D;
+}
+
+.goods_li{
+    width: 250px;
+    height: 350px;
+    background-color: #ffffff;
+    position: relative;
+    right: 60px;
+    top: -1600px;
+    
+}
+
+
+.goods_txt3{
+    position: relative;
+    left: -64px;
+
+}
+.goods_txt2{
+    position: relative;
+    left: 5px;
+}
+.goods_txt4{
+    position: relative;
+    left: 15px;
+    width: 200px;
+}
+.goods_txt5 .txt1{
+    position: relative;
+    left: -15px;
+}
+.goods_txt5 .txt2{
+    position: relative;
+    left: -13px;
+}
+.goods_txt5 .txt3{
+    position: relative;
+    left: -13px;
+}
+.little_box{
+    width: 250px;
+    display: block;
+    height: 100px;
+    position: relative;
+    left: -60px;
+    top: -100px;
+    
+    display: none;
+    background:linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
+}
+.little_box div{
+    width: 90px;
+    height: 30px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    border-radius: 50px;
+    
+}
+.goods_buttona{
+    position: relative;
+    left: -80px;
+    top: 5px;
+}
+.goods_buttonb{
+    position: relative;
+    left: -22px;
+    top: -30px;
+}
+.goods_buttonc{
+    position: relative;
+    left: 60px;
+    top: -65px;
+}
+.little_box div a{
+    position: relative;
+    top: 5px;
+}
+   
+.goods:hover div{
+    display: block;
+}
+#little_box{
+    background-color: rgb(62, 62, 62);
+}
+#little_box:hover{
+    background-color: #de3232;
+}
+#box{
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    position: relative;
+    top: 800px;
+    
+}
+#box #v{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    left: 435px;
+    top: -345px;
+    margin: auto8
+     
+}
+#box #h{
+    width: 1000px;
+    height: 350px;
+    position: relative;
+    left: 790px;
+    top: -693px;
+}
+#goodss{
+    position: relative;
+    left: 75px;
+    top: 1450px;
+    float: "";
+    z-index: 3;
+}
+#vs{
+    position: relative;
+    left: 435px;
+    top: 1100px;
+}
+#hs{
+    position: relative;
+    left: 790px;
+    top: 755px;
+}
+

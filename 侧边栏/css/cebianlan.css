@@ -1,0 +1,248 @@
+body{
+    font-size: 12px;
+    color: #666;
+}
+#box_ce{
+    position: relative;
+    float: right;
+    width: 190px;
+    height: 480px;
+    z-index: 1; 
+}
+.user_top{
+    height: 67px;
+    background: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.user_inner{
+    width: 190px;
+    height: 102px;
+    position: relative;
+}
+.user_tx img{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 45%;
+    vertical-align: middle;
+}
+.user_show{
+    position: absolute;
+    top: 16px;
+    left: 64px;
+    right: 10px;
+    font-size: 12px;
+}
+/* .user_show p{
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+} */
+.user_show .user_tip{
+    /* float: right; */
+    color: #666;
+    text-decoration: none;
+}
+.user_show .user_login{
+    text-decoration: none;
+    color: #333;
+}
+.user_show .user_reg{
+    text-decoration: none;
+    color: #333;
+}
+.user_profit{
+    width: 190px;
+    height: 25px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #FFF0F5;
+}
+.user_profit .fl{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 13px;
+    background: #e1251b;
+    text-decoration: none;
+}
+.user_profit .hy{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 13px;
+    background: #363634;
+    color: #e5d790;
+    text-decoration: none;
+}
+.news1{
+    overflow: hidden;
+    height: 130px;
+    background: #fff;
+    padding-bottom: 2px;
+border-bottom: 1px solid #FFF0F5;
+}
+.news_hd{
+    height: 20px;
+    padding: 10px 0 0;
+    position: relative;
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #666;
+}
+.news_tit{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+}
+.news_more{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+}
+.news_list{
+position: relative;
+margin: 0 15px;
+height: 88px;
+padding: 0;
+
+}
+.news_item{
+    max-width: 160px;
+height: 16px;
+line-height: 16px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+color: #999;
+margin-bottom: 6px;
+list-style: none;
+}
+.news_link{
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+}
+.news_tag{
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    height: 16px;
+    width: 35px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: 0;
+    color: #e1251b;
+    background-color: rgba(225,37,27,.08);
+    margin-right: 6px;
+}
+.service{
+    overflow: hidden;
+    position: relative;
+    height: 238px;
+    right: 5px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #666;
+}
+.service_entry {
+    overflow: hidden;
+    padding: 5px 0.5px;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+}
+.service_list{
+    padding-top: 5px;
+    height: 225px;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #666;
+
+}
+.service_item {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 55px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.service_item li{
+    list-style: none;
+}
+.service_lk {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+.service_ico, .service_ico_img{
+    display: block;
+}
+.service_ico{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    color: #666;
+    text-align: center;
+    list-style: none;
+}
+.service_ico_img, .service_ico_img_hover{
+    width: 28px;
+    height: 28px;
+}
+.service_ico_img_hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease;
+}
+.service_ico_img_hover img{
+    border: 0;
+    display: inline;
+}
+
+.service_tit{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 2px solid #fff;
+    color: #333;
+    text-align: center;
+    list-style: none;
+    font-size: 12px;
+    text-decoration: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="css/pageChange.css" />
+		<script src="js/pageChange.js"></script>
+		<script src="js/Click.js"></script>
+
+	</head>
+	<body>
+	<div class="box">
+		<div class="top">
+			<a href="">
+				<img src="img/img1.png" width="120px" height="120px">
+			</a>
+			<span>登陆、注册</span>
+		</div>
+		<div class="control">
+			<div class="item">
+				<div class="active">登录</div><div>注册</div>
+			</div>
+			<div class="content">
+				<div style="display: block;">
+					<p>用户名</p>
+					<input type="text" placeholder="只能由字母组成(1-9)位" id="login-username"/>
+					<p>密码</p>
+					<input type="password" placeholder="至少包含字母、数字(1-9位)" id="login-password"/>
+					<br/>
+					<input type="submit" value="登录" onclick="login()"/>
+				</div>
+				<div>
+					<p>用户名</p>
+					<input type="text" placeholder="只能由字母组成(1-9)位" id="register-username"/>
+					<p>密码</p>
+					<input type="password" placeholder="至少包含字母、数字(1-9位)" id="register-password"/>
+					<p>邮箱</p>
+					<input type="text" placeholder="email" id="register-email"/>
+					<br/>
+					<input type="submit" value="注册" onclick="register()"/>
+				</div>
+			</div>
+		</div>
+		<div class="foot_note_box" style="margin: auto;">
+			<div class="foot_note_wrap">
+					   <span class="foot_note_txt" style="text-align: center; margin: auto;width: 1000px;">
+						   <a>增值电信业务经营许可证: 浙B2-20110XXX 网络文化经营许可证: 浙网文[2015]0295-XXX 互联网家访信息服务 审核同意书 浙卫网审 【2016】 X号</a><br>
+						   <a>某某商城客户服务热线: 400-123456-XXX 投诉建议热线: 400-123456-XXX</a>
+					   </span>
+			</div>
+		</div> 
+	</div>
+	</body>
+</html>
+
+

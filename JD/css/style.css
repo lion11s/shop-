@@ -1,0 +1,462 @@
+@charset "utf-8";
+
+
+*{
+
+
+	margin: 0px;
+
+
+	padding: 0px;
+
+
+	text-decoration:none;
+
+
+	list-style: none;
+
+
+	font-size: 12px;
+
+
+	font-family: Arial;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*<!-- 商品展示区开始 -->*/
+
+
+#lifewindow{
+
+
+	width: 1210px;
+
+
+	height: 1000px;
+
+
+	margin: 0 auto;
+
+
+	/*border:1px solid orange;*/
+
+
+	position: relative;
+
+
+	z-index: 90;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid #000000; /*设置元素的边框为1px宽的黑色实线*/
+	background-color: #173339; /*设置元素的背景颜色为白色*/
+  
+
+
+}
+
+
+
+#lifewindow .lifemain{
+
+
+	width: 1210px;
+
+
+	height: 700px;
+
+
+	/* float: left; */
+
+
+}
+ 
+#lifewindow .lifemain .tuarea1{
+
+
+	width: 125px;
+
+
+	height: 125px;
+
+
+
+	position: relative;
+
+
+	overflow: hidden;
+
+
+	top: 60%; 
+	left: 66%;
+	transform: translate(-50%, -50%);
+
+
+
+}
+
+#lifewindow .lifemain .tuarea2{
+
+
+	width: 295px;
+
+
+	height: 100px;
+
+
+	position: relative;
+
+
+	overflow: hidden;
+
+
+	float: left;
+	margin: auto; 
+	top: 22%; 
+	left: 31%;
+	transform: translate(-50%, -50%);
+
+
+} 
+#lifewindow .lifemain .tuarea3 {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+
+
+
+#lifewindow .lifemain .tuarea4{
+
+
+	width: 250px;
+
+
+	height: 250px;
+
+
+	position: relative;
+
+
+	overflow: hidden;
+	top: 15%; 
+	left: 47%;
+	transform: translate(-50%, -50%);
+
+
+
+
+}
+
+
+#lifewindow .lifemain .tuarea5{
+
+
+	width: 150px;
+
+
+	height: 125px;
+
+
+	position: relative;
+	top: 4%; 
+	left: 33%;
+	transform: translate(-50%, -50%);
+
+
+
+
+	overflow: hidden;
+
+
+
+
+}
+
+
+#lifewindow .lifemain .tuarea6{
+
+
+	width: 200px;
+
+
+	height: 250px;
+
+
+	position: relative;
+
+
+
+
+	overflow: hidden;
+	top: 15%; 
+	left: 48%;
+	transform: translate(-50%, -50%);
+
+
+
+
+}
+
+#lifewindow .lifemain .tuarea7{
+	width: 100px;
+	height: 200px;
+	position: absolute;
+	top: 58%;
+	left: 61%;
+	transform: translate(-50%, -50%);
+  }
+
+#lifewindow .lifemain .tuarea8{
+	
+
+	width: 100px;
+
+
+	height: 300px;
+
+
+	position: relative;
+
+
+
+
+	overflow: hidden;
+	top: 3%; 
+	left: 35%;
+	transform: translate(-50%, -100%);
+
+
+  } 
+
+
+
+
+
+
+#lifewindow .lifemain .zhe{
+
+
+	width: 85px;
+
+
+	height: 85px;
+
+
+	float: left;
+
+
+	background: #ccc;
+
+
+	position: absolute;
+
+
+	z-index: 2;
+
+
+	filter:alpha(opacity=70);
+
+
+	opacity: 0.7;
+
+
+}
+
+
+#lifewindow .lifemain h3{
+
+
+	width: 120px;
+
+
+	font-size: 15px;
+
+
+	display: block;
+
+
+	margin-top: 30px;
+
+
+	float: left;
+
+
+	font-family: "微软雅黑";
+
+
+	color: black;
+
+
+	cursor: pointer;
+
+
+	margin-left: 20px;
+
+
+	font-weight: 700;
+
+
+}
+
+
+#lifewindow .lifemain .life1{
+
+
+	float: left;
+
+
+	width: 120px;
+
+
+	margin-top: 5px;
+
+
+	margin-left: 20px;
+
+
+}
+
+
+#lifewindow .lifemain .life1 a{
+
+
+	font-weight: 500;
+
+
+	color: #333;
+
+
+	font-size: 14px;
+
+
+}
+
+
+#lifewindow .lifemain .cantuan{
+
+
+	width: 72px;
+
+
+	height: 32px;
+
+
+	float: left;
+
+
+	margin-top: 5px;
+
+
+	margin-left: 20px;
+
+
+	background: url(../images/ee1.jpg) no-repeat;
+
+
+}
+
+
+#lifewindow .lifemain .zhe ul{
+
+
+	float: left;
+
+
+	filter:alpha(opacity=70);
+
+
+	opacity: 0.7;
+
+
+	margin-top: 20px;
+
+
+	margin-left: 30px;
+
+
+}
+
+
+#lifewindow .lifemain .zhe ul li{
+
+
+	list-style: disc;
+
+
+	margin-top: 5px;
+
+
+}
+
+
+#lifewindow .lifemain .zhe ul li a{
+
+
+	color: #333;
+
+
+}
+
+
+#lifewindow .lifemain .zhe1{
+
+
+	width: 120px;
+
+
+	height: 190px;
+
+
+	float: left;
+
+
+	background: white;
+
+
+	position: absolute;
+
+
+	z-index: 2;
+
+
+	filter:alpha(opacity=70);
+
+
+	opacity: 0.7;
+
+
+}
+
+
+#lifewindow .lifemain img{
+
+
+	position: absolute;
+
+
+	top: 0px;
+
+
+	left: 0px;
+
+
+}
+

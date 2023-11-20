@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>橘子商城 - 购物车</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style copy.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/shoppingcar.js"></script>
+    <link rel="stylesheet" href="css/shoppingcar.css">
+    
+		
+  </head>
+
+  <body>
+    <header>
+      <div class="index">
+        <img src="img/img1.png" alt="" class="img">
+        <div class="input">
+          <input type="text" placeholder="感冒药" id="list" style="position: relative; top: 1px;">
+          <button class="a">搜索</button>
+          
+      </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="t-head"><h4>全部商品</h4></div>
+      <div class="sct">
+        <div class="thead">
+          <div><input type="checkbox" class="selectAll" /></div>
+          <div>全选</div>
+          <div>商品</div>
+          <div>单价</div>
+          <div>数量</div>
+          <div>小计</div>
+          <div>操作</div>
+        </div>
+        <div id="listBox">
+          <div class="item">
+            <div><input type="checkbox" name="check" /></div>
+            <div><img src="imgs/product5.jpg" height="100" /></div>
+            <div>光明 纯牛奶250mL*24盒</div>
+            <div>¥<span class="price">58.80</span></div>
+            <div><input type="number" value="1" min="1" /></div>
+            <div>¥<span class="subtotal">58.80</span></div>
+            <div><a href="#" class="del">删除</a></div>
+          </div>
+        </div>
+        <div class="countBox">
+          <div><input type="checkbox" class="selectAll" /></div>
+          <div>全选&emsp;<a href="#" id="delcheck">删除选中的商品</a></div>
+          <div>
+            <span class="gray">总价:</span> ￥<span id="totalprice">0.00</span>
+          </div>
+          <div>去结算</div>
+        </div>
+      </div>
+    </div>
+    <div class="p-head"><h5>猜你喜欢</h5></div>
+    <div class="productsBox">
+      <div class="product">
+        <img src="img/product1.jpg" height="100" />
+        <p>
+          三星Galaxy S22 Ultra超视觉夜拍系统 超耐用 大屏S pen 曜夜黑
+        </p>
+        <div>¥5349.00</div>
+        <button>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入购物车
+        </button>
+      </div>
+      <div class="product">
+        <img src="img/product2.jpg" height="100" />
+        <p>
+          任天堂Switch NS掌上游戏机
+        </p>
+        <div>¥1980.00</div>
+        <button>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入购物车
+        </button>
+      </div>
+      <div class="product">
+        <img src="img/product3.jpg" height="100" />
+        <p>
+          泓一 蛋黄酥30枚礼盒装 雪媚娘饼干蛋糕休闲零食
+        </p>
+        <div>¥29.20</div>
+        <button>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入购物车
+        </button>
+      </div>
+      <div class="product">
+        <img src="img/product4.jpg" height="100" />
+        <p>
+          道道全 一级菜籽油5L 非转基因物理压榨
+        </p>
+        <div>¥67.80</div>
+        <button>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入购物车
+        </button>
+      </div>
+    </div>
+    <div class="foot_note_box" style="margin: auto;">
+			<div class="foot_note_wrap">
+					   <span class="foot_note_txt" style="text-align: center; margin: auto;width: 1000px;">
+						   <a>增值电信业务经营许可证: 浙B2-20110XXX 网络文化经营许可证: 浙网文[2015]0295-XXX 互联网家访信息服务 审核同意书 浙卫网审 【2016】 X号</a><br>
+						   <a>某某商城客户服务热线: 400-123456-XXX 投诉建议热线: 400-123456-XXX</a>
+					   </span>
+			</div>
+		</div> 
+    <footer></footer>
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- <script>
+      var pdata = [                             ]
+        $(function(){
+            init();
+            $("body").on("click",".del",function(){
+                $(this).closest(".item").remove();
+                countTOtalprice();
+                return false;
+            });
+        $("#delcheck").click(function(){
+            var $cks = $("#listBox input[type=checkbox]");
+            $cks.each(function () { 
+                if($(this).is(":checked")){
+                    $(this).closest(".item").remove();
+                }
+             });
+             check();
+             countTotalprice();
+        });
+        $(".selectAll").click(function(){
+            var $cks = $("#listBox input[type=checkbox]");
+            if($(this).is(":checked")){
+                $cks.prop("checked", true);
+                $(".selectAll").prop("checked",true);
+            }else{
+                $cks.prop("checked",false);
+                $(".selectAll").prop("checked",true);
+            }
+        });
+        $("body").on("click","input[name=check]",function () { 
+            check();
+         });
+         $("body").on("click","input[type=checkbox]",function () {
+            countTotalprice();
+           });
+        $("body").on("change","input[type=number]",function () { 
+            subtotal($(this));
+         });                                                                                  
+        });
+         function init() { 
+            $(".producysBox").html('');
+            $.each(pdata,function(){
+                $temp = `<div class="product">
+                    <img src="${this.pic}" height="100" />
+                    <p>${this.pname}</p>
+                    <div>¥ ${this.price.toFixed(2)}</div>
+                    <button id="${this.id}">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>加入购物车
+                    </button>
+                    </div>`;
+                    $(".productsBox").append($temp);
+            });
+            $(".productsBox button").on("click", function(){
+                add($(this).attr('id'));
+            });
+          }   
+          function add(productID) { 
+            let flag = 1;
+            $(".item").each(function () { 
+                var pid = Number($(this).attr('data-id'));
+                if(pid == productID){
+                    flag = 0;
+                    $(this).find("input[type='number']").val(function (n, c) { 
+                        return parseInt(c)+1;
+                     });
+                     subtotal($(this).find("input[type='number']"));
+                     return false;
+                }
+             })
+             if(flag){
+                $newProduct=`<div class='item' data-id="${pdata[productID - 1].id}">
+                    <div><input type="checkbox" name="check" value= "${pdata[productID - 1].id}" /></div>
+                    <div><img src="${pdata[productID - 1].pic}" height="100" /></div>
+                    <div>${pdata[productID - 1].pname}</div>
+                    <div>¥<span class="price">${pdata[productID -1].price.toFixed(2)}</span></div>
+                    <div><input type="number" value="1" min="1" /></div>
+                    <div>¥<span class='subtotal'>${pdata[productID - 1].price.toFixed(2)}</span></div>
+                    <div><a href='#' class="del">删除</a></div>
+                    </div>`;
+                    $("#listBox").append($newProduct);
+             }
+           }
+           function check(){
+            let oInput = $("input[name=check]");
+            let checkA = Array.from(oInput).every(item => item.checked == true);
+            $(".selectAll").prop("checked",checkA);
+           }
+           function subtotal($this) { 
+            var price = $this.closest(".item").find("span.price").text();
+            var subtotal = $this.closest(".item").find("span.subtotal");
+            var tootal = parseFloat(price) * $this.val();
+            subtotal.html(tootal.toFixed(2));
+            countTotalprice();
+            }
+            function countTotalprice(){
+                var $cks = $("#listBox input[type=checkbox]");
+                var totalprice = 0;
+                $cks.each(function () { 
+                    if($(this).is(":checked")){
+                        var price = $(this).closest(".item").find("span.subtotal").text();
+                        totalprice += parseFloat(price);
+                        $("#totalprice").html(totalprice.toFixed(2));
+                    }else{
+                        $("#totalprice").html(totalprice.toFixed(2));
+                    }
+                 });
+                 if(totalprice == 0){
+                    $("totalprice").html(totalprice.toFixed(2));
+                 }
+            }
+            </script> -->
+  </body>
+</html>

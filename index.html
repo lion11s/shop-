@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物商城首页</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="bootstrap-5.3.0-alpha1-dist/"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="css/shangpin.css">
+<link rel="stylesheet" href="css/lunbo.css">
+<link rel="stylesheet" href="css/tuijian.css">
+<link rel="stylesheet" href="css/yejiao.css">
+<link rel="stylesheet" href="css/cebianlan.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/demo1.css"> -->
+<script type="text/javascript" src="JD/js/jquery-1.7.2.min.js"></script>
+		
+		
+<script type="text/javascript" src="JD/js/jsstyle.js"></script> 
+<style>
+    .jingdong {
+    width: 190px;
+    height: 260px;
+    background-image: url(img/jingdong.png);
+    margin-right: 10px;
+  }
+
+</style>
+</head>
+<body style="background-color: rgb(236, 236, 237);margin: auto;">
+   <div id="fist">
+        <div class="index">
+            <img src="img/img1.png" alt="" class="img">
+            <div class="input">
+                <input type="text" placeholder="感冒药" id="list" style="position: relative; top: 1px;">
+                <button class="a">搜索</button>
+                
+            </div>
+           
+            <ul id="one">
+                <li >
+                    <a href="" class="sons" style="color: red;">橘子买药</a>
+                    <a href="" class="sons">iPhone14</a>
+                    <a href="" class="sons">品质装修</a>
+                    <a href="" class="sons">母亲好礼</a>
+                    <a href="" class="sons">卡地亚</a>
+                    <a href="" class="sons">免费设计</a>
+                    <a href="" class="sons">魅族手机</a>
+                </li>
+            </ul>
+            
+                <div class="dropdown">
+                    <div class="shopping">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" style="color: red;">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg>
+                          <a href="shoppingcar.html" style="color: red; font-size: 14px;" id="shopping">我的购物车</a>
+                    </div>
+                        <div id="shop">
+                            <a id="shopcar" href=""  >购物车空空，赶紧选购吧!</a>
+                            <li></li>
+                        </div>   
+                </div>
+            
+           
+            <hr class="hr">
+            <ul id="two">
+                <li>
+                    <a href="" id="son">橘子家电</a>
+                    <a href="" id="son">进口好物</a>
+                    <a href="" id="son">橘子五金城</a>
+                    <a href="" id="son">PLUS会员</a>
+                    <a href="" id="son">拍卖</a>
+                    <a href="" id="son">橘子超市</a>
+                    <a href="" id="son">便宜包邮</a>
+                    <a href="" id="son">橘子生鲜</a>
+                    <a href="" id="son">电脑数码</a>
+                    <a href="" id="son">秒杀</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 1000px;margin: auto;height: 400px;">
+        <div class="fenlei">
+            <nav>
+                <a href="#">
+                    <i class="fas fa-tshirt"></i>
+                    <span>女装</span>
+                    <span>内衣</span>
+                    <span>奢品</span>
+                    <div class="hovercard">
+                      <img src="img/女装.jpg" alt="女装">
+                      <h3>女装推荐</h3>
+                      <p>Halo Queen短袖t恤女2023夏款美式复古上衣圆领宽松半袖</p>
+                      <img src="img/内衣.jpg" alt="内衣">
+                      <h3>内衣推荐</h3>
+                      <p>小吊带背心女打底抹胸外穿一字肩裹胸美背内搭</p>
+                      <img src="img/奢品.jpg" alt="奢品">
+                      <h3>奢品推荐</h3>
+                      <p>全新现货 GGMarmont马蒙牛皮单肩斜挎包链条包女士</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <i class="fas fa-shoe-prints"></i>
+                    <span>女鞋</span>
+                    <span>男鞋</span>
+                    <span>箱包</span>
+                    <div class="hovercard">
+                      <img src="img/女装.jpg" alt="女鞋">
+                      <h3>女鞋推荐</h3>
+                      <p>回力官方板鞋女鞋春夏季百搭增高小白鞋子女士网面透气薄款休闲运动鞋</p>
+                      <img src="img/男鞋.jpg" alt="男鞋">
+                      <h3>男鞋推荐</h3>
+                      <p>板鞋男春夏镂空透气网面鞋2023新款男士潮流运动休闲鞋 </p>
+                      <img src="img/箱包.jpg" alt="箱包">
+                      <h3>箱包推荐</h3>
+                      <p>SOO行李箱男万向轮拉杆箱耐磨抗摔26英寸A330旅行箱密码箱女商务黑色</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <i class="fas fa-magic"></i>
+                    <span>美妆</span>
+                    <span>饰品</span>
+                    <span>洗护</span>
+                    <div class="hovercard">
+                      <img src="img/美妆.jpg" alt="美妆">
+                      <h3>美妆推荐</h3>
+                      <p>SK-II神仙水230ml精华液sk2保湿skii护肤品套装520情人节礼物</p>
+                      <img src="img/饰品.jpg" alt="饰品">
+                      <h3>C推荐</h3>
+                      <p>纳福和田玉手链女生福牌手环手串本命年闺生日520礼物</p>
+                      <img src="img/洗护.jpg" alt="洗护">
+                      <h3>洗护推荐</h3>
+                      <p>潘婷无硅油洗发水洗护套装300ml*2+3分钟护发素40ml清爽控油强韧蓬松</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <i class="fas fa-tshirt"></i>
+                    <span>男装</span>
+                    <span>运动</span>
+                    <span>百货</span>
+                    <div class="hovercard">
+                      <img src="img/男装.jpg" alt="男装">
+                      <h3>男装推荐</h3>
+                      <p>京东京造【抗菌系列】5A抑菌抗发黄T恤男40S新疆棉t恤男夏短袖打底T白色L</p>
+                      <img src="img/运动.jpg" alt="运动">
+                      <h3>运动推荐</h3>
+                      <p>跳绳成人计数无绳有绳款加粗学校中考考试训练负重两用健身器材体育室内外运动跳绳儿童小学生</p>
+                      <img src="img/百货.jpg" alt="百货">
+                      <h3>百货推荐</h3>
+                      <p>梦庭 肥皂盒香皂盒子免打孔双层沥水皂架皂碟香皂置物架 粉色</p>
+                    </div>
+                </a>
+                  <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                <span>手机</span>
+                <span>数码</span>
+                <span>企业礼品</span>
+                <div class="hovercard">
+                  <img src="img/手机.jpg" alt="手机">
+                  <h3>手机推荐</h3>
+                  <p>1.6亿像素超清主摄 AI Vlog视频大师 全新Magic OS 7.0系统</p>
+                  <img src="img/数码.jpg" alt="数码">
+                  <h3>数码推荐</h3>
+                  <p>索尼 DSC-RX100M7 黑卡数码相机 专业备机 4K</p>
+                  <img src="img/企业礼物.jpg" alt="企业礼品">
+                  <h3>企业礼品推荐</h3>
+                  <p>国潮古风手账本套装笔记本子手帐礼盒送同学朋友美好祝福 </p>
+                </div>
+            </a>
+                  <a href="#">
+                    <i class="fas fa-home"></i>
+                    <span>家装</span>
+                    <span>电器</span>
+                    <span>车品</span>
+                    <div class="hovercard">
+                      <img src="img/家装.jpg" alt="家装">
+                      <h3>家装推荐</h3>
+                      <p>八海鸟肥皂盒2个装 壁挂式香皂置物架浴室卫生间厕所沥水免打孔家居用品</p>
+                      <img src="img/电器.jpg" alt="电器">
+                      <h3>电器推荐</h3>
+                      <p>小双门冰箱小型家用迷你电冰箱节能宿舍冷藏冷冻BCD-42S128全国联保</p>
+                      <img src="img/车品.jpg" alt="车品">
+                      <h3>车品推荐</h3>
+                      <p>车载电话号码牌铝合金车载停靠牌车内车上移车牌汽车用品车辆高档摆件车用</p>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span>食品</span>
+                    <span>生鲜</span>
+                    <span>母婴</span>
+                    <div class="hovercard">
+                      <img src="img/食品.jpg" alt="食品">
+                      <h3>食品推荐</h3>
+                      <p>三只松鼠肉松饼1000g 黄金肉松饼早餐代餐休闲零食办公室点心面包量贩箱装</p>
+                      <img src="img/生鲜.jpg" alt="生鲜">
+                      <h3>生鲜推荐</h3>
+                      <p>纯色本味 冷冻福建小鲍鱼 烧烤 煲汤 生鲜 火锅食材 10-15只 200g/袋</p>
+                      <img src="img/母婴.jpg" alt="母婴">
+                      <h3>母婴推荐</h3>
+                      <p>雀巢（Nestle）超启能恩幼儿乳蛋白部分水解配方奶粉3段（12-36个月适用）</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <i class="fas fa-pills"></i>
+                    <span>医药</span>
+                    <span>保健</span>
+                    <span>进口</span>
+                    <div class="hovercard">
+                    
+                        <img src="img/医药.jpg" alt="医药">
+                        <h3>医药推荐</h3>
+                        <p>白云山 风油精6ml大瓶 感冒头痛止痛 蚊虫叮咬止痒晕车头晕 6ml*1瓶</p>
+                      </a>
+                      <a href="#">
+                        <img src="img/保健.jpg" alt="保健">
+                        <h3>保健推荐</h3>
+                        <p>Swisse斯维诗 奶蓟草护肝片 120片*2瓶 含奶蓟草姜黄洋蓟澳洲进口</p>
+                      </a>
+                      <a href="#">
+                        <img src="img/进口.jpg" alt="进口">
+                        <h3>进口推荐</h3>
+                        <p>阿孔特俄罗斯冰淇淋威化饼干原装进口零食品休闲408g 独立包装</p>
+                      </a>
+                    </div> 
+                  </a>
+                </nav>
+        </div>
+        <div class="te">
+            <img src="imgs/product1.jpg" alt="">
+        </div>
+        <div class="lunbo">
+            <div id="slideshow">
+                <img src="img/1.jpg">
+                <img src="img/2.jpg">
+                <img src="img/3.jpg">
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <div class="leftright">
+                  <button class="button left" aria-label="Previous Slide">&lt;</button>
+                  <button class="button right" aria-label="Next Slide">&gt;</button>
+                </div>
+              </div>
+        </div>
+        <div id="box_ce">
+            <div id="box_user" class="user_top">
+                <div class="user_inner">
+                    <div class="user_tx">
+                        <a href="" target="_blank">
+                            <img src="img/img1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="user_show">
+                    <a class="user_tip" href="">Hi~欢迎逛橘子！</a>
+                    <p>
+                        <a class="user_login" href="login.html">登录 &nbsp;|&nbsp;</a>
+                        <a class="user_reg" href="login.html">注册</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="user_profit">
+                <a class="fl" href="">新人福利</a>
+                <a class="hy" href="">plus会员</a>
+            </div>
+            
+            <div id="box_news">
+                <div class="news1">
+                    <div class="news_hd">
+                        <h5 class="news_tit">橘子快报</h5>
+                        <a class="news_more" href="">更多></a>
+                    </div>
+                    <ul class="news_list">
+                        <li class="news_item">
+                            <a class="news_link" href=""><span class="news_tag">热议</span>超聚光夜视长焦瞩目！华为P60 Pro羽砂黑体验分享</a>
+                        </li>
+                        <li class="news_item">
+                            <a class="news_link" href=""><span class="news_tag">推荐</span>【店长推荐】原木风现代简约实木床</a>
+                        </li>
+                        <li class="news_item">
+                            <a class="news_link" href=""><span class="news_tag">热门</span>【新品尝鲜】简约小户型科技布沙发</a>
+                        </li>
+                        <li class="news_item">
+                            <a class="news_link" href=""><span class="news_tag">HOT</span>信号超强的5G手机！荣耀Magic5 至臻版体验分享</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="box_service" class="service">
+                <div class="service_entry">
+                    <ul class="service_list">
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/jiudian.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/jiudian2.jpg">
+                                </i>
+                                <span class="service_tit">酒店</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/wujincheng.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/wujincheng2.jpg">
+                                </i>
+                                <span class="service_tit">五金城</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/jiayouka.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/jiayouka2.jpg">
+                                </i>
+                                <span class="service_tit">加油卡</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/dianyinpiao.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/dianyinpiao2.jpg">
+                                </i>
+                                <span class="service_tit">电影票</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/jipiao.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/jipiao2.jpg">
+                                </i>
+                                <span class="service_tit">机票</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/yunjianzhan.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/yunjianzhan2.jpg">
+                                </i>
+                                <span class="service_tit">云建站</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/baitiao.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/baitiao2.jpg">
+                                </i>
+                                <span class="service_tit">白条</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/youxi.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/youxi2.jpg">
+                                </i>
+                                <span class="service_tit">游戏</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/huafei.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/huafei2.jpg">
+                                </i>
+                                <span class="service_tit">话费</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/huochepiao.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/huochepiao2.jpg">
+                                </i>
+                                <span class="service_tit">火车票</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/lipinka.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/lipinka2.jpg">
+                                </i>
+                                <span class="service_tit">礼品卡</span>
+                            </a>
+                        </li>
+                        <li class="service_item">
+                            <a class="service_lk" href="">
+                                <i class="service_ico">
+                                    <!-- 常态ico -->
+                                    <img class="service_ico_img" src="img/qiyegou.jpg">
+                                    <!-- hover态 -->
+                                    <img class="service_ico_img_hover" src="img/qiyegou2.jpg">
+                                </i>
+                                <span class="service_tit">企业购</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="containers">
+        <div class="jingdong">
+          <h2>橘子秒杀</h2>
+          <p><strong id="clock">21:00</strong>点场 距结束</p>
+          <div class="time">
+            <span id="shi"></span>
+            <span id="fen"></span>
+            <span id="miao"></span>
+          </div>
+        </div>
+        <div class="goodss">
+          <img src="img/product1.jpg" alt="商品1">
+          <p>三星Galaxy S22 Ultra超视觉夜拍系统 超耐用 大屏S pen 曜夜黑</p>
+        </div>
+        <div class="goodss">
+          <img src="img/product2.jpg" alt="商品2">
+          <p>任天堂Switch NS掌上游戏机
+          </p>
+        </div>
+        <div class="goodss">
+          <img src="img/product3.jpg" alt="商品3">
+          <p> 泓一 蛋黄酥30枚礼盒装 雪媚娘饼干蛋糕休闲零食</p>
+        </div>
+        <div class="goodss">
+          <img src="img/product4.jpg" alt="商品4">
+          <p>道道全 一级菜籽油5L 非转基因物理压榨</p>
+        </div>
+      </div>
+    <!-- 商品展示区开始 --> 
+    <div class="showcommodity" style="width: 250px;height: 55px;text-align: center;">
+           <img src="img/推荐1.png" alt="" id="imgone">
+           <h2 class="title">频道广场</h2>
+           <img src="img/推荐2.png" alt="" id="imgtwo">
+
+    </div>
+		<div id="lifewindow">
+			<div class="lifemain">
+				<div class="tuarea1">
+					<img src="JD/images/e2.jpg" alt="" />
+					<div class="zhe">
+						<h3>防疫指南</h3>
+						<div class="life1">
+							<a href="">酒精湿巾</a>
+						</div>
+						<div class="life1">
+							<a href="" style="color:#E4393C">全场低至4折</a>
+						</div>
+						<ul>
+							<li><a href="">更多商品</a></li>
+							<li><a href="">进入防疫站</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tuarea2">
+					<img src="JD/images/e3.jpg" alt="" />
+					<div class="zhe1">
+						<h3>电脑数码</h3>
+						<div class="life1">
+							<a href="">优惠一站购</a>
+						</div>
+						<div class="life1">
+							<a href="" style="background:red;color:white;padding:2px 2px">直降100元</a>
+						</div>
+					</div>
+				</div>
+				<div class="tuarea3">
+					<img src="JD/images/2.jpg" alt="" />
+					<div class="zhe">
+						<h3>京东超市</h3>
+						<div class="life1">
+							<a href="">一站式囤好物</a>
+						</div>
+						<div class="life1">
+							<a href="" style="color:#E4393C;font-size:12px">白条免息送京豆</a>
+						</div>
+						<ul>
+							<li><a href="">拍拍二手</a></li>
+							<li><a href="">大牌一元抢&gt;</a></li>
+						</ul>
+					</div>
+				</div>
+			    <div class="tuarea4">
+					<img src="JD/images/1.jpg" alt="" />
+					<div class="zhe1">
+						<h3>今日团购</h3>
+						<div class="life1">
+							<a href="">89元自助餐</a>
+						</div>
+						<div class="life1" style="margin-top:20px">
+							团购价
+							<span style="font-size:25px;color:red;font-weight:700">￥89</span>
+						</div>
+						<div class="cantuan"></div>
+					</div>
+				</div>
+				<div class="tuarea5">
+					<img src="JD/images/e6.jpg" alt="" />
+					<div class="zhe1">
+						<h3>京东首发</h3>
+						<div class="life1">
+							<a href="">MR X8游戏本</a>
+						</div>
+						<div class="life1">
+							<a href="" style="background:red;color:white;padding:2px 2px">8G超级显卡</a>
+						</div>
+					</div>
+				</div>
+				<div class="tuarea6">
+					<img src="JD/images/e7.jpg" alt="" />
+					<div class="zhe1">
+						<h3>优惠券</h3>
+						<div class="life1">
+							<a href="">NB大牌神券</a>
+						</div>
+						<div class="life1">
+							<a href="" style="color:#E4393C">免费疯抢ing</a>
+						</div>
+					</div>
+				</div>
+				<div class="tuarea7">
+					<img src="JD/images/e8.jpg" alt="" />
+					<div class="zhe1">
+						<h3>京东预售</h3>
+						<div class="life1">
+							<a href="">魔力按摩贴</a>
+						</div>
+						<div class="life1">
+							<a href="" style="background:red;color:white;padding:2px 2px">你背后的女人</a>
+						</div>
+					</div>
+				</div>
+				<div class="tuarea8">
+					<img src="JD/images/e9.jpg" alt="" />
+					<div class="zhe1">
+						<div class="zhe1">
+							<h3>金融精选</h3>
+							<div class="life1">
+								<a href="">天天免息</a>
+							</div>
+							<div class="life1">
+								<a href="" style="color:red">iPad轻松购</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>   
+    <div id="box">
+        <div class="recommend">
+            <div id="title">
+                <h2 class="title">为你推荐</h2>
+            </div>
+            
+            <div style="display: flex;justify-content: center;">
+                <div class="container">
+                    <img src="img/推荐1.png" class="imga" alt="">
+                    <img src="img/推荐2.png" alt="" class="imgb">
+                    <div id="menus">
+                        
+                        <div class="menu_menus"><h4>精选</h4></div>
+                        
+                        <p>猜你喜欢</p>
+                    </div>
+                    <div class="menu" id="menu">
+                        <h4>智能先锋</h4>
+                        <p>大电器城</p>
+                    </div>
+                    <div class="menu" id="menu">
+                        <h4>居家优品</h4>
+                        <p>品质生活</p>
+                    </div>
+                    <div class="menu" id="menu">
+                        <h4>超市百货</h4>
+                        <p>百货生鲜</p>
+                    </div>
+                    <div class="menu" id="menu">
+                        <h4>时尚达人</h4>
+                        <p>美妆穿搭</p>
+                    </div>
+                    <div class="menu" id="menu">
+                        <h4>进口好物</h4>
+                        <p>橘子国际</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goods" id="goodss">
+            <ul id="uls">
+                <li class="goods_li">
+                    <a class="goods_img"><img src="img/huaguocha.jpg"></a>
+                    <a class="goods_price">￥89.00</a>
+                    <a class="goods_txt">
+                        <span class="txt1">京东超市</span>
+                        <span class="txt2">茶颜悦色 花果茶 同心瓶</span>
+                    </a>
+                    <a class="goods_txt2">休闲饮食吃货嘉年华,美味好物9.9</a>
+                    <a class="goods_txt3">2万+<span>条评价</span></a>
+                    <a href="#" class="goods_txt4">茶颜悦色京东自营旗舰店	💭</a>
+                    <a class="goods_txt5">
+                        <span class="txt1">自营</span>
+                        <span class="txt2">跨店每满200-20</span>
+                        <span class="txt3">满赠</span>
+                    </a>
+                    <a href="#"><button class="goods_buttona">▢对比</button></a>
+                    <a href="#"><button class="goods_buttonb">♡关注</button></a>
+                    <a href="#"><button class="goods_buttonc">🛒加入购物车</button></a>
+                </li>
+            </ul>
+            
+            
+        </div>
+        <div class="goods" id="vs">
+            <ul>
+                <li class="goods_li">
+                    <a class="goods_img"><img src="img/huaguocha.jpg"></a>
+                    <a class="goods_price">￥89.00</a>
+                    <a class="goods_txt">
+                        <span class="txt1">京东超市</span>
+                        <span class="txt2">茶颜悦色 花果茶 同心瓶</span>
+                    </a>
+                    <a class="goods_txt2">休闲饮食吃货嘉年华,美味好物9.9</a>
+                    <a class="goods_txt3">2万+<span>条评价</span></a>
+                    <a href="#" class="goods_txt4">茶颜悦色京东自营旗舰店	💭</a>
+                    <a class="goods_txt5">
+                        <span class="txt1">自营</span>
+                        <span class="txt2">跨店每满200-20</span>
+                        <span class="txt3">满赠</span>
+                    </a>
+                    <a href="#"><button class="goods_buttona">▢对比</button></a>
+                    <a href="#"><button class="goods_buttonb">♡关注</button></a>
+                    <a href="#"><button class="goods_buttonc">🛒加入购物车</button></a>
+                </li>
+            </ul>
+        </div>
+            
+        <div class="goods" id="hs">
+            <ul>
+                <li class="goods_li">
+                    <a class="goods_img"><img src="img/huaguocha.jpg"></a>
+                    <a class="goods_price">￥89.00</a>
+                    <a class="goods_txt">
+                        <span class="txt1">京东超市</span>
+                        <span class="txt2">茶颜悦色 花果茶 同心瓶</span>
+                    </a>
+                    <a class="goods_txt2">休闲饮食吃货嘉年华,美味好物9.9</a>
+                    <a class="goods_txt3">2万+<span>条评价</span></a>
+                    <a href="#" class="goods_txt4">茶颜悦色京东自营旗舰店	💭</a>
+                    <a class="goods_txt5">
+                        <span class="txt1">自营</span>
+                        <span class="txt2">跨店每满200-20</span>
+                        <span class="txt3">满赠</span>
+                    </a>
+                    <a href="#"><button class="goods_buttona">▢对比</button></a>
+                    <a href="#"><button class="goods_buttonb">♡关注</button></a>
+                    <a href="#"><button class="goods_buttonc">🛒加入购物车</button></a>
+                </li>
+            </ul>
+            
+    </div>
+         
+        <div class="goods" id="goods">
+            <ul>
+                <li class="goods_li">
+                    <a class="goods_img"><img src="img/huaguocha.jpg"></a>
+                    <a class="goods_price">￥89.00</a>
+                    <a class="goods_txt">
+                        <span class="txt1">京东超市</span>
+                        <span class="txt2">茶颜悦色 花果茶 同心瓶</span>
+                    </a>
+                    <a class="goods_txt2">休闲饮食吃货嘉年华,美味好物9.9</a>
+                    <a class="goods_txt3">2万+<span>条评价</span></a>
+                    <a href="#" class="goods_txt4">茶颜悦色京东自营旗舰店	💭</a>
+                    <a class="goods_txt5">
+                        <span class="txt1">自营</span>
+                        <span class="txt2">跨店每满200-20</span>
+                        <span class="txt3">满赠</span>
+                    </a>
+                    <a href="#"><button class="goods_buttona">▢对比</button></a>
+                    <a href="#"><button class="goods_buttonb">♡关注</button></a>
+                    <a href="#"><button class="goods_buttonc">🛒加入购物车</button></a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div class="goods" id="v">
+            <ul>
+                <li class="goods_li">
+                    <a class="goods_img"><img src="img/huaguocha.jpg"></a>
+                    <a class="goods_price">￥89.00</a>
+                    <a class="goods_txt">
+                        <span class="txt1">京东超市</span>
+                        <span class="txt2">茶颜悦色 花果茶 同心瓶</span>
+                    </a>
+                    <a class="goods_txt2">休闲饮食吃货嘉年华,美味好物9.9</a>
+                    <a class="goods_txt3">2万+<span>条评价</span></a>
+                    <a href="#" class="goods_txt4">茶颜悦色京东自营旗舰店	💭</a>
+                    <a class="goods_txt5">
+                        <span class="txt1">自营</span>
+                        <span class="txt2">跨店每满200-20</span>
+                        <span class="txt3">满赠</span>
+                    </a>
+                    <a href="#"><button class="goods_buttona">▢对比</button></a>
+                    <a href="#"><button class="goods_buttonb">♡关注</button></a>
+                    <a href="#"><button class="goods_buttonc">🛒加入购物车</button></a>
+                </li>
+            </ul>
+            
+            
+        </div>
+        <div class="goods" id="h">
+            <ul>
+                <li class="goods_li">
+                    <a class="goods_img"><img src="img/huaguocha.jpg"></a>
+                    <a class="goods_price">￥89.00</a>
+                    <a class="goods_txt">
+                        <span class="txt1">京东超市</span>
+                        <span class="txt2">茶颜悦色 花果茶 同心瓶</span>
+                    </a>
+                    <a class="goods_txt2">休闲饮食吃货嘉年华,美味好物9.9</a>
+                    <a class="goods_txt3">2万+<span>条评价</span></a>
+                    <a href="#" class="goods_txt4">茶颜悦色京东自营旗舰店	💭</a>
+                    <a class="goods_txt5">
+                        <span class="txt1">自营</span>
+                        <span class="txt2">跨店每满200-20</span>
+                        <span class="txt3">满赠</span>
+                    </a>
+                    <a href="#"><button class="goods_buttona">▢对比</button></a>
+                    <a href="#"><button class="goods_buttonb">♡关注</button></a>
+                    <a href="#"><button class="goods_buttonc">🛒加入购物车</button></a>
+                </li>
+            </ul>
+            <div class="pt-carousel">
+                <div class="pt-carousel-inner">
+                  <div class="pt-carousel-item"><img src="img/4.jpg"></div>
+                  <div class="pt-carousel-item"><img src="img/5.jpg"></div>
+                  <div class="pt-carousel-item"><img src="img/6.jpg"></div>
+                  <div class="pt-carousel-item"><img src="img/7.jpg"></div>
+                  <div class="pt-carousel-item"><img src="img/4.jpg"></div>
+                </div>
+        </div>
+
+
+            <div id="foot_box">
+                <div id="foot_wrap">
+                   <div class="foot_top">
+                        <ul>
+                            <li><span>&nbsp;优&nbsp;</span>品质保证</li>
+                            <li class="font_top_i">|</li>
+                            <li><span>&nbsp;七&nbsp;</span>七天无理由退货</li>
+                            <li class="font_top_i">|</li>
+                            <li><span>&nbsp;特&nbsp;</span>特色服务体验</li>
+                            <li class="font_top_i">|</li>
+                            <li><span>&nbsp;&nbsp;？</span>帮助中心</li>
+                        </ul>
+                    </div>
+                    <div class="foot_bottom">
+                        <div class="foot_bottom_l">
+                            <dl>
+                                <dt>关于我们</dt>
+                                <dd>品牌故事</dd>
+                                <dd>联系商城</dd>
+                                <dd>加入我们</dd>
+                            </dl>
+                            <dl>
+                                <dt>商城保障</dt>
+                                <dd>发票保障</dd>
+                                <dd>售后规则</dd>
+                                <dd>缺货赔付</dd>
+                            </dl>
+                            <dl>
+                                <dt>支付方式</dt>
+                                <dd>快捷支付</dd>
+                                <dd>支付宝</dd>
+                                <dd>信用卡</dd>
+                                <dd>微信支付</dd>
+                                <dd>货到付款</dd>
+                            </dl>
+                            <dl>
+                                <dt>购物指南</dt>
+                                <dd>开通支付宝</dd>
+                                <dd>支付宝充值</dd>
+                                <dd>物流服务</dd>
+                            </dl>
+                        </div>
+                        <div class="foot_bottom_r">
+                            <a>400-100-5678</a>
+                            <a>周一至周日 8:00-18:00</a>
+                            <a>（仅收市话费）</a>
+                            <span> 24小时在线客服</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot_note_box" style="margin: auto;">
+                    <div class="foot_note_wrap">
+                               <span class="foot_note_txt" style="text-align: center; margin: auto;width: 1000px;">
+                                   <a>增值电信业务经营许可证: 浙B2-20110XXX 网络文化经营许可证: 浙网文[2015]0295-XXX 互联网家访信息服务 审核同意书 浙卫网审 【2016】 X号</a><br>
+                                   <a>某某商城客户服务热线: 400-123456-XXX 投诉建议热线: 400-123456-XXX</a>
+                               </span>
+                    </div>
+                </div> 
+                
+        </div>
+            
+              
+            
+    </div>
+    <script src="js/index.js"></script>
+ 
+    <script>
+        var slideshow = document.getElementById("slideshow");
+        var images = slideshow.getElementsByTagName("img");
+        var dots = document.getElementsByClassName("dot");
+        var buttons = document.getElementsByClassName("button");
+        var currentIndex = 0;
+      
+        images[currentIndex].style.display = "block";
+        dots[currentIndex].classList.add("active");
+      
+        // 手动切换图片
+        function changeImage(direction) {
+          images[currentIndex].style.display = "none";
+          dots[currentIndex].classList.remove("active");
+          if (direction === "left") {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+          } else if (direction === "right") {
+            currentIndex = (currentIndex + 1) % images.length;
+          }
+          images[currentIndex].style.display = "block";
+          dots[currentIndex].classList.add("active");
+        }
+      
+        setInterval(function() {
+          changeImage("right");
+        }, 3000); // 3秒切换一次图片
+      
+        // 点击左右方向键切换图片
+        document.addEventListener("keydown", function(event) {
+          if (event.key === "ArrowLeft") {
+            changeImage("left");
+          } else if (event.key === "ArrowRight") {
+            changeImage("right");
+          }
+        });
+      
+      
+        for (var i = 0; i < buttons.length; i++) {
+          (function(i) {
+            buttons[i].addEventListener("click", function() {
+              changeImage(i === 0 ? "left" : "right");
+            });
+          })(i);
+        }
+      
+        for (var i = 0; i < dots.length; i++) {
+          (function(i) {
+            dots[i].addEventListener("click", function() {
+              changeImage(i > currentIndex ? "right" : "left");
+            });
+          })(i);
+        }
+           // 目标时间，即京东秒杀结束时间，以毫秒计算（示例为2023年5月17日上午5点半）
+    const endTime = new Date('2023-05-17T05:30:00.000Z').getTime();
+
+// 计算当前时间到目标时间的时间差
+const timeDiff = endTime - Date.now();
+
+// 计算剩余时间的时、分、秒
+const hoursLeft = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
+const minutesLeft = Math.floor((timeDiff / 1000 / 60) % 60);
+const secondsLeft = Math.floor((timeDiff / 1000) % 60);
+
+// 更新倒计时元素
+document.getElementById('shi').innerHTML = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
+document.getElementById('fen').innerHTML = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
+document.getElementById('miao').innerHTML = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+
+// 定时器，每秒钟更新一次倒计时
+setInterval(() => {
+  const timeDiff = endTime - Date.now();
+  const hoursLeft = Math.floor((timeDiff / (1000 * 60 * 60)) % 24);
+  const minutesLeft = Math.floor((timeDiff / 1000 / 60) % 60);
+  const secondsLeft = Math.floor((timeDiff / 1000) % 60);
+  document.getElementById('shi').innerHTML = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
+  document.getElementById('fen').innerHTML = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
+  document.getElementById('miao').innerHTML = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+}, 1000);
+// let iconCarousel = document.querySelector('.icon-carousel-inner');
+// let iconCarouselItems = document.querySelectorAll('.icon-carousel-item');
+// let iconCarouselItemWidth = iconCarouselItems[0].offsetWidth;
+// let iconCarouselItemCount = iconCarouselItems.length;
+// let iconCarouselWidth = iconCarouselItemWidth * iconCarouselItemCount;
+// iconCarousel.style.width = iconCarouselWidth + 'px';
+
+// setInterval(() => {
+//   let currentLeft = parseInt(iconCarousel.style.left) || 0;
+//   let newLeft = currentLeft - iconCarouselItemWidth;
+//   if (newLeft < -iconCarouselWidth) {
+//     newLeft = 0;
+//   }
+//   iconCarousel.style.left = newLeft + 'px';
+// }, 3000);
+      </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+.recommend {
+    background-color: rgb(236, 236, 237);
+    width: 1000px;
+    margin: auto;
+    height: 200px;
+    position: relative;
+    top: -540px;
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* 每个子元素之间的距离平均分配 */
+    background-color: white;
+    padding: 0 40px;
+}
+
+.menu {
+    position: relative;
+    left: -120px;
+    top: 20px;
+}
+
+.menu::after{
+    content: "";
+    top: 25%;
+    position: relative;
+    left: calc(100% + 40px);
+    /* 可根据需要调整距离 */
+    height: 50%;
+    width: 1px;
+    /* 竖线宽度*/
+    background-color: #e2e0e0;
+}
+
+.menu h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    text-align: center;
+    height: 25px;
+}
+
+.p {
+    width: 75px;
+}
+
+.menu:hover h4 {
+    /* 在鼠标悬停在.menu元素上时，并设置它的内容为空格，表现出来就像是一个按钮 */
+    content: " ";
+    display: block;
+    height: 25px;
+    width: 75px;
+    
+    color: rgb(212, 29, 29);
+   
+    justify-content: center;
+}
+
+.menu  p{
+    color: darkgray;
+    position: relative;
+    top: 5px;
+}
+
+#menu:hover p{
+    color: #cd1d1d;
+    
+}
+#menus p{
+    color: #cd1d1d;
+    position: relative;
+    top: 5px;
+}
+.menu_menus{
+    width: 80px;
+    height: 27px;
+    background-color: #e80b0b;
+    border-radius: 50px;
+    position: relative;
+    top: -5px;
+}
+.menu_menus h4{
+    position: relative;
+    top: 7px;
+}
+#menus{
+ color: #fefefe;
+position: relative;
+ left: -140px;
+ top: 20px;
+}
+.container{
+    height: 85px;
+    width: 1000px;
+    position: relative;
+    margin: auto;
+    top: 5px;
+}
+.container img{
+    width: 50px;
+    height: 50px;
+    
+}
+.imga{
+    position: relative;
+    left: 350px;
+    top: -55px;
+}
+.imgb{
+    position: relative;
+    left: 460px;
+    top: -58px;
+}
+.title{
+    text-align: center;
+     font-size: 30px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+#title{
+    width: 250px;
+    height: 60px;
+    position: relative;
+    margin: auto;
+    position: relative;
+    top: 0px;
+}
